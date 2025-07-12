@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+    <id>org.ruyisdk.cmakeimporter</id>
+    <version>1.0.0</version>
+    <name>CMake Project Importer</name>
+    <provider-name>RuyiSDK</provider-name>
+    <extension
+        point="org.eclipse.ui.importWizards">
+        <wizard
+            id="org.ruyisdk.cmakeimporter.importWizard"
+            name="CMake Project Importer"
+            class="org.ruyisdk.cmakeimporter.wizard.CMakeProjectImportWizard"
+            icon="icons/cmake.png"
+            category="org.eclipse.ui.Basic">
+            <description>
+                导入并识别CMake项目。
+            </description>
+        </wizard>
+    </extension>
+</plugin> 
